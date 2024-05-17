@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pitstop</title>
+</head>
+<body>
+  <style>
+    .message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-family: 'Space Mono', monospace;
+    }
+
+    .line {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .word {
+      margin: 3px;
+      color: white;
+      transition-duration: 1000ms;
+    }
+    .visible {
+      color: black;
+    }
+
+    #hints {
+      width: 100vw;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+
+  <div class="message" onclick="show()">
+    <div class="line">
+      <p class="word">Welcome</p>
+      <p class="word">Traveler!</p>
+    </div>
+    <div class="line">
+      <p class="word">It</p>
+      <p class="word">seems</p>
+      <p class="word">you</p>
+      <p class="word">have</p>
+      <p class="word">put</p>
+      <p class="word">tremendous</p>
+      <p class="word">effort</p>
+      <p class="word">into</p>
+      <p class="word">this</p>
+      <p class="word">hunt!</p>
+    </div>
+    <div class="line">
+      <p class="word">How</p>
+      <p class="word">about</p>
+      <p class="word">you</p>
+      <p class="word">stop</p>
+      <p class="word">here</p>
+      <p class="word">and</p>
+      <p class="word">rest</p>
+      <p class="word">for</p>
+      <p class="word">a</p>
+      <p class="word">while?</p>
+    </div>
+  </div>
+  <div class="line" id="hints">
+    <p id="hint-1">https://project-skjule/1110010010000101001111001101111010111011010000001010000011110101</p>
+    <p id="hint-2">https://www.youtube.com/watch?v=jVpsLMCIB0Y</p>
+    <p id="hint-3">https://www.youtube.com/watch?v=p7YXXieghto</p>
+    <p id="hint-4">https://project-skjule/1111110111101000010101110101100010010010010111111001000101101000</p>
+    <p id="hint-5">https://www.youtube.com/watch?v=I2O7blSSzpI</p>
+    <p id="hint-6">https://youtu.be/I1f5nRgbujE</p>
+  </div>
+
+  <script>
+    let currentWord = 0
+    const myInterval = setInterval(showWord, 500);
+
+    function showWord() {
+      if (currentWord == 21) {
+        myStopFunction();
+      }
+
+      const word = document.querySelectorAll('.word')[currentWord];
+      word.classList.add('visible');
+
+      currentWord += 1;
+    }
+
+    function myStopFunction() {
+      clearInterval(myInterval);
+    }
+  </script>
+  <script src="pages.txt"></script>
+</body>
+</html>
