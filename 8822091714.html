@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    body {
+      overflow: hidden;
+      background-color: rgb(54, 55, 57);
+    }
+    button {
+      width: 50px;
+      height: 50px;
+
+      font-size: 30px;
+
+      margin-top: 10px;
+
+      color: rgb(92, 92, 92);
+      background-color: rgb(249, 241, 224);
+
+      border: 1px solid rgb(249, 241, 224);
+
+      transition-duration: 300ms;
+    }
+    button:hover {
+      color: rgb(141, 141, 141);
+    }
+    .book {
+      height: 80%;
+      aspect-ratio: 2 / 3;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      background-color: rgb(249, 241, 224);
+
+      border: 5px solid rgb(112, 69, 54);
+      border-radius: 10px;
+    }
+
+    .pages{
+      width: 100%;
+      height: 90%;
+
+      border-radius: 10px;
+    }
+
+    .page {
+      height: 100%;
+      aspect-ratio: 2 / 3;
+
+      padding: 10.5px 15px 10px 15px;
+      margin-bottom: 70%;
+      transform: translateY(-0%);
+
+      font-family: 'Lucidia Console', monospace;
+      font-size: 15px;;
+    }
+
+    #page-count {
+      width: 150px;
+      height: 50px;
+
+      margin-left: 60%;
+      margin-top: -50px;
+
+      font-size: 15px;
+      font-family: 'Lucidia Console', monospace;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+     /*            */
+     /* COVER PAGE */
+     /*            */
+
+    .cover {
+      height: 80%;
+      aspect-ratio: 2 / 3;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      background-color: rgb(112, 62, 54);
+      color: rgb(31, 13, 10);
+
+      border: 5px solid rgb(112, 69, 54);
+      border-radius: 10px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      font-family: 'lucidia console', monospace;
+      font-size: 25px;
+    }
+    #circle {
+      width: 200px;
+      height: 200px;
+
+      background-color: rgb(76, 26, 18);
+
+      border: 7px solid rgb(76, 26, 18);
+      border-radius: 50%;
+      margin: 20px;
+    }
+    #plane{
+      transform: translate(10%, 15%);
+    }
+  </style>
+  
+  <div class="book">
+    <div class="pages">
+      <div class="page" id="page-0">
+        <p>˙††πßÚ÷÷¥ø¨†¨≥∫´÷πˇ´Á¡Å∏´ªœ©</p>
+        <p>if you're reading this story, sorry, i am bad at writing.</p>
+        <p>å¬ßø≤ ¥ø¨ ß˙ø¨¬∂ ∂´çø∂´ π©≥ ¶ (ˆ† ∑ˆ¬¬ <em>definitely</em> ˙´¬π)</p>
+      </div>
+      <div class="page" id="page-1">
+        <p>May 15, 1987. <i>Today I woke up, ate breakfast and ran to class. So how did I end up here?</i> “HELLO ALL CADETS. FLIGHT CLASSES ARE TEMPORALLY SUSTAINED FOR TESTING. PLEASE COME TO CLASSROOM 361” <i>This is weird. Why are they stopping my class for testing? Oh well.</i> I left the classroom and started walking down the dull gray hallway, with dull gray doors, leading to more dull gray classrooms. I paused. <i>361</i>. I walked inside. It was a mostly regular classroom — except for the orange walls, pink carpet, black ceiling, and — heaven forbid — rainbow coloured desks! Inside was a man. He was wearing a navy suit and had a thick brown beard, which did not extend past his chin. “Nice to meet you, I am Sergeant Ski.” He announced.”I will be testing you today.” “Um, Sir?” Asked a cadet in the middle. “Why is the room so… colourful?” The Sergeant cleared his throat before responding.” It’s to make you uncomfortable, which in turn improves test results! Now no more chitter chatter lets get to testing.”</p>
+        <p>
+        Only 20 minutes later Sergeant Ski declared, “That concludes the written test! Please grab your bags and exit through the door to the right.” </p>
+      </div>
+      <div class="page" id="page-2">
+        <p>As we filed through the door, I felt the fresh cool breeze slip by. <i>Slightly warmer than last week,</i> I noted, <i>maybe by summer the temperature will actually be higher than 10˚C!</i> Walking toward the set of testing Ekranoplan’s docked in the water. The instructor began calling out peoples names one by one and pointing them to the aircraft they would be piloting. “Winter, Kynn!” He roared. I jogged over to the plane which he was pointing to and climbed inside. “Nice to meet you, my name is Albert and I’ll be your flight partner today.” explained the man inside. “Kynn. Nice to meet you too.” “Okay,” began Albert, “I want you to just taxi us out to the runway, and then we’ll just cruise around for a bit.”</p>
+        <p>=========================================</p>
+        <p>
+          “Well, that’s it!” exclaimed Albert as we pulled into the harbor. The time had passed so quickly I didn’t even realize it was lunchtime! I walked into the cafeteria and spotted Hope. Hope is my best friend. We met in high school, and she joined the same flight academy as an engineer and co-pilot. </p>
+      </div>
+      <div class="page" id="page-3">
+        <p>“Ó´¥ ¥˜˜, ˙ø∑'∂ ¥ø¨® †´ß† ©ø?” Í˙´ åß˚´∂ åß ˆ ∑å¬˚´∂ ø√´®. </p>
+        <p>“˜ø† †˙å† ∫å∂... ∑åˆ† å ß´çø˜∂! Óø∑'∂ ¥ø¨ ˚˜ø∑ ˆ ∑åß †å˚ˆ˜© å †´ß†?”</p>
+        <p>“ˇ˙´¥ å˜˜ø¨˜ç´∂ ˆ† ø√´® †˙´ ¬ø¨∂ ßπ´å˚´® ∂¨µµ¥.” Óøπ´ †´åß´∂, “ı´ßˆ∂´ß, †˙´¥ çå¬¬´∂ ´√´®¥ø˜´ƒø® å †´ß†.”
+        <p>“ˇ˙´¥ ∂ˆ∂?” ˆ ®´π¬ˆ´∂, çø˜ƒ¨ß´∂.</p>
+        <p>Í˙´ ¬å¨©˙´∂. “ˆƒ ¥ø¨'∂ πå¥ å††´˜†ˆø˜ ˙å¬ƒ †˙´ †ˆµ´ ¥ø¨ ∑ø¨¬∂ ˚˜ø∑ †˙´ß´ †˙ˆ˜©ß.”</p>
+        <p>“ı¨† ˆ å¬∑å¥ß πå¥ å††´˜†ˆø˜!” ˆ ´≈ç¬åˆµ´∂.</p>
+        <p>“Í¨®´, ß¨®´.” Í˙´ π¨˜ç˙´∂ µ´ ˆ˜ †˙´ ß˙ø¨¬∂´® π¬å¥ƒ¨¬¬¥.</p>
+        <p>„´ ßå† ∂ø∑˜ å˜∂ çø˜†ˆ˜¨´∂ †ø ç˙å† ¨˜†ˆ¬ ¬¨˜ç˙ ∑åß ø√´®.</p>
+        <p>=========================================</p>
+        <p>““Ïˆ®ß† øƒ å¬¬≤ ˆ ∑å˜† ¥ø¨ †ø ˚˜ø∑ †˙å† †˙ˆß µˆßßˆø˜ ∑ˆ¬¬ ∫´ ´≈†®´µ´¬¥ ∂å˜©´®ø¨ß≤ å˜∂ ßøµ´ øƒ ¥ø¨ µå¥ ˜ø† µå˚´ ˆ† ∫åç˚ å¬ˆ√´≥” †˙´ Çåπ†åˆ˜ å˜˜ø¨˜ç´∂≤ </p>
+      </div>
+      <div class="page" id="page-4">
+        <p>“But the goal is simple. Infiltrate enemy territory, deposit our troops, and then get out of there.” His words were both exciting and terrifying.</p>
+        <p>=========================================</p>
+        <p>Training can be intense. I knew our mission would be difficult, but it outdid itself. Every day was easily harder than the last! On day one we started kinda simple, practicing the basics on the ekranoplan, which felt like I was maneuvering something the size of an aircraft carrier. The plane was really only about the size of a C-17, since our mission didn’t require artillery or anything, but boy was it hard! Weirdly, on day two we were tested on things we had never done in an ekranoplan before, and day three we had to go back and perfect these maneuvers. It didn’t seem too difficult at first, but that was before being hit with vast amounts of paperwork, spotting, and little sleep. This grueling schedule lasted for three and a half months! I will say I’m happy with how it turned out though, because now I know many things I didn’t before.</p>
+      </div>
+      <div class="page" id="page-5">
+        <p>ˇø∂å¥ ˆß †˙´ ∂å¥≥ ˆ ∑ø˚´ ®ø¨©˙¬¥ ¢º µˆ˜¨†´ß å©ø å˜∂ œ¨ˆç˚¬¥ πåç˚´∂ µ¥ ∫å©ß≥ „´ ∑´®´ ˜ø∑ å† †˙´ ®¨˜∑å¥ ∑˙´®´ ∑´ ∑ˆ¬¬ ¬øå∂ ¨π †˙´ †®øøπß å˜∂ ø†˙´® ß¨ππ¬ˆ´ß≤ å˜∂ †˙´˜ ˙´å∂ †ø ø¨® ƒˆ®ß† ∂´πøßˆ† πøˆ˜†≥ “˝øø∂ µø®˜ˆ˜©” ˆ ©®´´†´∂ Óøπ´≥ ˆ ∑åß ©®å†´ƒ¨¬ ß˙´ ∑ø¨¬∂ ∫´ µ¥ çø-πˆ¬ø†≥ „´ ç¬ˆµ∫´∂ ˆ˜†ø †˙´ çøç˚πˆ† å˜∂ ∫´©å˜ †ø ç˙´ç˚ ´åç˙ çø˜†®ø¬≤ å˜∂ ß∑ˆ†ç˙≥ ˜ø∑ ∑´ ∑´®´ ®´å∂¥ †ø ©ø≥ “Ç¬´å® π®øπ⁄”ˆ ¥´¬¬´∂≥ ˇ˙ˆß ˆß å π˙®åß´ †˙å† πˆ¬ø†ß ¨ß´ †ø †´¬¬ ø†˙´® π´øπ¬´ å®ø¨˜∂ †˙´ åˆ®ç®åƒ† †˙å† †˙´¥ å®´ å∫ø¨† †ø ß†å®† †˙´ ´˜©ˆ˜´ß≥ ˆ ß¬ø∑¬¥ †å≈ˆ´∂ ¨ß ø¨† ø˜†ø †˙´ å®´å øƒ ∑å†´® †˙å† ∑ø¨¬∂ ∫´ ø¨® ®¨˜∑å¥≥  “Áø¨ ®´å∂¥¿” Óøπ´ åß˚´∂ µ´≥ “˜øπ´≥” ˆ ®´π¬ˆ´∂≤ ∫¨† ˆ ßµˆ¬´∂ çø˜ƒˆ∂´˜†¬¥ å˜∂ π¨ß˙´∂ †˙´ †˙®ø††¬´≥ ˆ ˚´π† ˆ˜ç®´åßˆ˜© ø¨® ßπ´´∂ ¨˜†ˆ¬ ˆ ˙´å®∂ å ∑˙øøß˙≤ å˜∂ †˙´ ´˚®å˜øπ¬å˜ ¬ˆƒ†´∂ ˆ˜†ø †˙´ åˆ®≥ ˜ø∑ †˙å† ∑´ ∑´®´ ˆ˜ ©®ø¨˜∂ ´ƒƒ´ç†≤ ˆ ƒˆ®´∂ ¨π ø¨® ∫åç˚ †∑ø ´˜©ˆ˜´ß å˜∂ †¨®˜´∂ øƒƒ †˙´ ´ˆ©˙† µåßßˆ√´ ø˜´ß ¨π ƒ®ø˜†≥ </p>
+        <p>“Âå˜≤ ƒ¬¥ˆ˜© ˆ˜ å˜ ´˚®å˜øπ¬å˜ ˆß ∆¨ß† å˜ø†˙´® ˚ˆ˜∂ øƒ ´≈π´®ˆ´˜ç´≤ ˆß˜’† ˆ†¿” Óøπ´ åß˚´∂≥</p>
+        <p>“Á´å˙≥ ˆ†’ß å¬µøß† çå¬µˆ˜©≤ ∫´ˆ˜© å∫¬´ †ø ©¬ˆ∂´ å∫ø√´ †˙´ ∑å†´® å† åˆ®π¬å˜´ ßπ´´∂ß≥”</p>
+      </div>
+      <div class="page" id="page-6">
+        <p>“Look at the radar. I think we are nearing the destination.”</p>
+        <p>I pointed just as a spotter hopped into the cockpit. “Were approaching the first deposit point!” She told Hope and I. “Its about 10 miles ahead, and part of the shore is flooded with enemies.”</p>
+        <p>“Okay. We will begin descending, thank you.” We silently shimmied up under radar to the opposite shore, opened up the back, and let half our troops pour out onto the beach. They made a b-line to the trees, probably because they were being shot at, so I asked Hope to close the back and slammed that throttle in. The Ekranoplan started to collect lift. <i>Too slow.</i> I pulled up harder. “Hold on!” Then I heard a loud crack. Kaboom! the engines sputtered. “They shot our engines!” cried Hope. <i>It’s okay. I can still do this.</i> “Get ready to abort!” I screamed. I jerked on the yoke, and pushed the remaining three engines as far as they could go. <i>Come on, come on.</i> Twisting the yoke to the left and slamming on the rudder, I attempted to steer the aircraft around.</p>
+      </div>
+      <div class="page" id="page-7">
+        <p><i>Ô¨ß† å ¬ˆ††¬´ µø®´.</i> Óøπ´ ƒ®å˜†ˆçå¬¬¥ π¨ß˙´∂ the ÍØÍ å˜∂ †˙´˜ ∆¨µπ´∂ †ø Çøµµß, ®å∂ˆøˆ˜© ƒø® ∫åç˚¨π. Å¬†˙ø¨©˙ ø¨® µˆßßˆø˜ ∑åß ˜ø† ø√´®, ˜ø∑ †˙´ ø˜¬¥ ©øå¬ ∑åß †ø ©´† ´√´®¥ø˜´ ˙øµ´ ßåƒ´¬¥. ‰ˆ©˙† åß ˆ †˙ø¨©˙† ∑´ ∑´®´ ø¨† øƒ ®å˜©´, ˆ ˙´å®∂ å ßç®´´ç˙ˆ˜© ∑˙ˆß†¬´, å˜∂ ´√´®¥†˙ˆ˜© ∑´˜† ∫¬åç˚.</p>
+        <p>=========================================</p>
+        <p>“„˙å† ˙åππ´˜´∂¿” ”„˙´®´ åµ ˆ¿” ˆ ¬øø˚´∂ å®ø¨˜∂≥ Å ˙øßπˆ†å¬ ∑å®∂≥ “Ø˙≤ ¥ø¨’®´ å∑å˚´≥” Íåˆ∂ †˙´ µå˜ ∫´ßˆ∂´ µ´≥  “ˇ˙´ ´˚®å˜øπ¬å˜ ´≈π¬ø∂´∂≥ ˇ˙å˜˚ß †ø ¥ø¨ µøß† ∑´®´ ßå√´∂≥” Ó´ πå¨ß´∂ †ø ¬´† ˆ† ßˆ˜˚ ˆ˜≥ “Ø˙≤ ∑åˆ† ∑˙å† å∫ø¨† Óøπ´⁄¿” “ˇ˙´ çø-πˆ¬ø†¿ ˆ’µ ßø®®¥≥” ˆ ∫®ø˚´ ∂ø∑˜ ˆ˜ †´å®ß≥ ˇ˙´ µå˜ πå††´∂ µ¥ ∫åç˚≥ “ˆ† ∑ˆ¬¬ ∫´ ø˚å¥≥”</p>
+        <p>=========================================</p>
+        <p>Å †®¨µπ´† ßø¨˜∂´∂ ßå∂¬¥. Ïø¨® ßø¬∂ˆ´®ß µå®ç˙´∂ å çøƒƒˆ˜ ∂ø∑˜ †˙´ ¬å˜´. ˆ† ∑åß å ∫´å†ˆƒ¨¬ çøƒƒˆ˜; å ƒˆ˜´ µˆ≈†¨®´ øƒ µå®∫¬´ å˜∂ ∑øø∂. ˇ˙´¥ ß´† †˙´ çøƒƒˆ˜ ∂ø∑˜ ∑ˆ†˙ å ßˆ¬´˜† †˙¨∂. ˇ˙´ ˙ø®˜ ß†øππ´∂ ∫®¨π†¬¥ å˜∂ ˆ ∑å¬˚´∂ ∂ø∑ †˙´ åˆß¬´, π¬åçˆ˜© å ƒø¬∂´∂ ƒ¬å© ø˜ †˙´ çøƒƒˆ˜.</p>
+      </div>
+      <div class="page" id="page-8">
+        <p>I bowed. The horn began again, while I took my place in the audience. An officer dressed in heavy black walked in front of the congregation. “Thank you everyone, for coming,” he started, “Today we are here to remember those who have died in duty, protecting us and our nation. They dedicated themselves to this country, this people, and we will not let that be forgotten. We mourn for each of these warriors, and we pray that their souls will be saved. Let us depart in peace.” I left in silence with Hope. She had suffered major injuries, including a nasty scar running from her eyebrow across to her lower neck. But she had survived — <em>we</em> had survived, and we were going to keep on surviving, keep on thriving. We were going to change the world.</p>
+        <p>=--=---=----=-----Fin-----=----=---=--=</p>
+        <p>ˆƒ ¥ø¨'®´ ®´å∂ˆ˜© †˙iß, ¥ø¨ ß˙ø¨¬∂ ¬øø˚ ƒø® ç¬¨´ß ø˜ πå©´ º.</p>
+      </div>
+    </div>
+    <button id="flip-backward" onclick="flip_backward()">◀︎</button>
+    <button id="flip-forward" onclick="flip_forward()">▶︎</button>
+    <div id="page-count"></div>
+  </div>≈
+  <div class="cover" onclick="flip_forward()">
+    <h1>Soaring Down</h1>
+    <div id="circle">
+      <div id="plane">
+        <svg height="175px" width="175px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+          viewBox="0 0 512 512"  xml:space="preserve">
+        <style type="text/css">
+          .st0{fill:rgb(34, 14, 11);}
+        </style>
+        <g>
+          <path class="st0" d="M507.068,194.059c-5.3-6.143-13.759-8.507-21.481-6.013l-59.859,17.264
+            c-11.406,3.695-23.81,2.792-34.574-2.507l-68.887-33.742l61.093-80.864c4.682-4.847,5.584-12.261,2.139-18.095
+            c-3.422-5.809-10.336-8.638-16.848-6.903L247.486,116.32l23.597,11.572l-16.23,8.115l-24.69-12.095L124.278,72.015
+            C65.799,43.262,18.154,52.695,3.16,83.208c-14.994,30.522,26.591,49.402,57.102,64.395l105.696,52.041l54.749,242.78
+            c1.877,8.982,10.003,15.28,19.224,14.828c9.172-0.464,16.633-7.509,17.632-16.669l33.956-179.158l73.569,36.226
+            c47.073,21.732,97.259,19.64,112.253-10.86l32.579-70.61C513.507,208.911,512.39,200.19,507.068,194.059z"/>
+        </g>
+        </svg>
+      </div>
+    </div>
+    <p>By ∏å≈†ø˜  „´å†˙´®ß</p>
+  </div>
+
+  <script>
+    const pages = document.querySelectorAll('.page');
+    const page_count = document.getElementById('page-count');
+
+    const max_pages = 8;
+    const height_multiplier = -150;
+
+    let page_num = 0;
+
+    function update() {
+      for (let i = 0; i < pages.length; i++) {
+        pages[i].style.transform = `translateY(${height_multiplier * page_num}%)`;
+      }
+      page_count.innerHTML = `Page ${page_num} of ${max_pages}`;
+
+      // Cover Image
+      if (page_num != 0) {
+        document.querySelector('.cover').style.left = "-500px";
+      }
+      else {
+        document.querySelector('.cover').style.left = "50%";
+      }
+    }
+
+    function flip_forward() {
+      page_num += 1;
+      if (page_num >= max_pages) page_num = max_pages;
+
+      update();
+    }
+    function flip_backward() {
+      page_num -= 1;
+      if (page_num <= 0) page_num = 0;
+
+      update();
+    }
+
+    update();
+  </script>
+</body>
+</html>
