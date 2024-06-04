@@ -82,40 +82,29 @@ class Alt_Library {
   }
 
   encode(string) {
-    let result = [];
+    let result = string;
     for (const letter of string) {
-      if (letter == string[string.length]) {
-        break
-      }
-      const current_char = this.full[letter]
-      if (!current_char) {
-        result.push(letter);
-      } else {
-        result.push(current_char);
+      if (this.full[letter] || false) {
+        result = result.replace(letter, this.full[letter]);
       }
     }
-    console.log(`Result: ${result.toString().replace(/,/g,'')} encoded.`);
-    return result.toString().replace(/,/g,'');
+    console.log(`Encoded to: ${result}`);
+    return result;
   }
 
   decode(string) {
-    let result = [];
+    const lib = this.get_reverse();
+    let result = string;
     for (const letter of string) {
-      if (letter == string[string.length]) {
-        break
-      }
-      const current_char = this.get_reverse()[letter]
-      if (!current_char) {
-        result.push(letter);
-      } else {
-        result.push(current_char);
+      if (lib[letter] || false) {
+        result = result.replace(letter, lib[letter]);
       }
     }
-    console.log(`Result: ${result.toString().replace(/,/g,'')} decoded.`);
-    return result.toString().replace(/,/g,'');
+    console.log(`Encoded to: ${result}`);
+    return result;
   }
 }
 
 const alt = new Alt_Library();
 
-alt.decode(alt.encode("This"))
+alt.decode(alt.encode("Hello World!"))
