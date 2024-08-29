@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pitstop</title>
+</head>
+<body>
+  <style>
+    .message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      font-family: 'Space Mono', monospace;
+    }
+
+    .line {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .word {
+      margin: 3px;
+      color: white;
+      transition-duration: 1000ms;
+    }
+    .word--visible {
+      color: black;
+    }
+
+    .him {
+      color: white;
+    }
+    .him--visible {
+      color: rgb(123, 41, 41);
+    }
+
+    #hints {
+      width: 100vw;
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+
+  <div class="message" onclick="show()">
+    <div class="line">
+      <p class="word">Welcome?</p>
+      <p class="word">No.</p>
+    </div>
+    <div class="line">
+      <p class="word">You're</p>
+      <p class="word">not</p>
+      <p class="word">welcome</p>
+      <p class="word">here.</p>
+      <p class="word">He</p>
+      <p class="word">is</p>
+      <p class="word">watching</p>
+      <p class="word">you.</p>
+      <p class="word">Leave</p>
+      <p class="word">now.</p>
+    </div>
+    <div class="line">
+      <p class="word him">How</p>
+      <p class="word him">about</p>
+      <p class="word him">you</p>
+      <p class="word him">stop</p>
+      <p class="word him">here</p>
+      <p class="word him">and</p>
+      <p class="word him">rest</p>
+      <p class="word him">for</p>
+      <p class="word him">a</p>
+      <p class="word him">while?</p>
+    </div>
+  </div>
+  <div class="line" id="hints">
+    <p id="hint-1">˙´´ ˙´´ ˙å ˙å≥</p>
+    <p id="hint-2">you must go fast!</p>
+  </div>
+
+  <script>
+    let currentWord = 0
+    const myInterval = setInterval(showWord, 500);
+
+    function showWord() {
+      if (currentWord == 21) {
+        myStopFunction();
+      }
+
+      const word = document.querySelectorAll('.word')[currentWord];
+      if (word.classList.contains('him')) {
+        word.classList.add('him--visible');
+      } else {
+        word.classList.add('word--visible');
+      }
+
+      currentWord += 1;
+    }
+
+    function myStopFunction() {
+      clearInterval(myInterval);
+    }
+  </script>
+  <script src="pages.txt"></script>
+</body>
+</html>
